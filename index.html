@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="topHeader">
+                         <a href="#" onclick="showData(this.id)" id="goHome"> <img src="img/logo.png" alt=""></a>
+            <nav class="left"> 
+                <button id="closeBtn" ><i class="fa-solid fa-x"></i></button>             
+                    <ul>
+                        <li><a onclick="showData(this.id)"  id="acceuil" href="#">acceuil</a></li>
+                        <li><a onclick="showData(this.id)"  id="introduction" href="#">introduction</a></li>
+                        <li><a onclick="showData(this.id)"  id="présentation" href="#">présentation</a></li>
+                        <li><a onclick="showData(this.id)"  id="historique" href="#">aperçue historique</a></li>
+                        <li><a onclick="showData(this.id)"  id="enPlus" href="#">en plus</a></li>
+                    </ul>
+            </nav>  
+            <button id="openBtn"  style="margin-right: 10px; clip-path: circle();"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="bottomHeader hide" id="bottomHeader">
+                <ul>
+                    <li><a href="#" onclick="showTypes(this.id)" id="papier">ch sur papier</a></li>
+                    <li><a href="#" onclick="showTypes(this.id)" id="couche">ch sur couche maince</a></li>
+                    <li><a href="#" onclick="showTypes(this.id)" id="gaz">ch en phase gazeuse</a></li>
+                    <li><a href="#" class="liq" ondblclick="showTypes(this.id)" id="typeBtn">ch en phase liqide <i class="fa-solid fa-caret-down"></i></a></li><!--   -->
+                </ul>
+            </div>
+
+        </header>
+        <main >
+            <div class="headerBtn hide" id="headerBtn">
+                <button onclick="showTypes(this.id)" id="papier">
+                    <i class="fa-solid fa-file"></i> </button>
+                <button onclick="showTypes(this.id)" id="couche" >
+
+                    <i class="fa-solid fa-flask"></i>
+
+                </button>
+                <button onclick="showTypes(this.id)" id="gaz">
+                <i class="fa-duotone fa-solid fa-wind"></i>
+                </button>
+                <button onclick="showTypes(this.id)" id="typeBtn">
+                <i class="fa-solid fa-droplet"></i>
+            </button>
+            </div>
+            <div class="chTypes hide" id="chTypes">
+                <ul>
+                    <li><a href="#" onclick="showTypes(this.id)" id="adsorbtion">ch d'adsorbtion</a></li>
+                    <li><a href="#" onclick="showTypes(this.id)" id="partage">ch de partage</a></li>
+                    <li><a href="#" onclick="showTypes(this.id)" id="échange">ch à échange d'ions </a></li>
+                    <li><a href="#" onclick="showTypes(this.id)" id="exclusion">ch d'exclusion sétrique</a></li>
+                    <li><a href="#" onclick="showTypes(this.id)" id="affinité">ch d'affinité</a></li>
+                    <li><a href="#" onclick="showTypes(this.id)" id="haute">ch à haute performence</a></li>
+                </ul>
+            </div>
+            
+            <section class="home" id="home">
+                <div class="container">
+                  <div class="univSection">
+
+                    <div class="topSection">
+
+                        <h2><span>Université M'Hamed Bougara (Boumerdès)</span> </h2> 
+                        
+                    </div>
+                    <div class="aboutSection">
+                        <div class="textSection">
+                            <h4>Institut National des Industries Manufacturières</h4>
+                        <p> (INIM) était un institut technique supérieur algérien,
+                             créé en 1987 par la restructuration de l'INIL, spécialisé dans la formation industrielle. En 1998,
+                             il a été intégré au regroupement de six instituts nationaux pour former l'Université M'hamed Bougara de Boumerdès (UMBB)</p>  
+                    </div>
+
+                    <div class="imgSection">
+                        <img src="img/univlogo.png" alt="logo">
+                        
+                    </div>
+                                 
+                    </div>
+        
+                  </div>  
+                  <div class="intervationSection">
+                    <div class="topSection">
+                       <h2><span>la chromatographie</span></h2> 
+                    </div>
+                    <div class="aboutSection" style=" margin-bottom: 50px;">
+                    <div class="textSection" >
+                        <p>Aujourd’hui, on vas vous présenter la chromatographie qu'elle été une technique très importante en chimie et en biologie. Elle permet de séparer les différents constituants d’un mélange afin de les identifier et de les analyser.
+                             Cette méthode est largement utilisée dans les laboratoires de recherche, dans le domaine médical ainsi que dans l’industrie.
+Au cours de cette intervention, nous allons voir les éléments essentiels qui permettent de comprendre cette technique.</p>
+                           
+                            <ul style="margin-top: 50px;">
+                             <li style="color: blue;margin-top: 15px;">Définition</li>
+                            <li style="color: blue;margin-top: 15px;">Principe</li>
+                            <li style="color: blue;margin-top: 15px;">Applications en biologie</li>
+                            <li style="color: blue;margin-top: 15px;">Avantages et limites</li>
+                            <li style="color: blue;margin-top: 15px;">Types de chromatographie</li>
+                            <li style="color: blue;margin-top: 15px;">Aperçu historique</li>
+                                                   
+                            </ul>
+                       
+                    </div>
+                    
+                        <div class="imgSection">
+                            <img src="img/Mikhail_Tsvet.jpg" alt="">
+                        </div> 
+                    </div>
+
+                    </div>
+                  <div class="membersSection">
+                    <div class="topSection">
+                        <h2><span>membres</span></h2>
+                    </div>
+               <div class="aboutSection">
+                     <table>
+                        <tr>
+                            <th>nom</th>
+                            <th>prenom</th>
+                            <th>group</th>
+                            <th>sous group</th>
+                            <th>matricule</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Boukhlifa</td>
+                                <td>mohamed el amine</td>
+                                <td>4</td>
+                                <td>8</td>
+                                <td>222231362512</td>
+                            </tr>
+                             <tr>
+                                <td>rachedi</td>
+                                <td>anais</td>
+                                <td>4</td>
+                                <td>8</td>
+                                <td>222231228017</td>
+                            </tr>
+                             <tr>
+                                <td>derouiche</td>
+                                <td>maria</td>
+                                <td>4</td>
+                                <td>8</td>
+                                <td>242431229403</td>
+                            </tr>
+                             <tr>
+                                <td>bechar</td>
+                                <td>chaima</td>
+                                <td>4</td>
+                                <td>8</td>
+                                <td>242431248401</td>
+                            </tr>
+                             <tr>
+                                <td>hherra ikram</td>
+                                <td>some one</td>
+                                <td>4</td>
+                                <td>8</td>
+                                <td>242431236102</td>
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+                  </div>  
+                </div>
+                
+
+            </section>
+           
+            <section class="introduction hide"  id="introsection" >
+                <div class="container">
+                     
+                     <div class="defSection">
+                        <div class="topSection">
+                            <h2><span>definition </span></h2>
+                        </div>
+                        <div class="aboutSection">
+                         <div class="textSection">
+                            <p>La chromatographie est une methode de separation des composante d'un mélange . Elle est utiliser en médcine , en chimie , en environnement et industrie alimentaire.
+                                Elle a été inventé par le botaniste Russ Mehail tswett
+                            </p>
+                        </div>
+                        <div class="imgSection">
+                            <img src="img/chromatographie.webp" alt="image">
+                        </div>   
+                        </div>
+                        
+                    </div>     
+                    <div class="principeSection">
+                        <div class="topSection">
+                            <h2><span>Principe</span></h2>
+                            
+                        </div>
+                        <div class="aboutSection">
+                            <div class="fristBox Box">
+                                  <div class="topBox">
+                                      <h3><span>phase stationnaire</span></h3>
+                                    </div>
+                                    <div class="textBox">
+                                        <ul>
+                                            <li style="margin-bottom: 10px;">Materiau fixe qui retient les composante du mélange</li>
+                                            <li>Peut étre solide ou liquide fixé sur un support</li>
+                                        </ul>
+                                    </div>  
+                                </div>
+                                <div class="secondBox Box">
+                                    <div class="topBox">
+                                        <h3><span>phase mobile</span></h3>
+                                    </div>
+                                    <div class="textBox">
+                                        <ul>
+                                            <li style="margin-bottom: 10px;"> fluide qui entraine les composants à travers la phase stationnaire</li>
+                                            <li> peut étre gaz ou un liquide</li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                                <div class="thirdBox Box">
+                                    <div class="topBox">
+                                        <h3><span>séparation des composantes</span></h3>
+                            </div>
+                            <div class="textBox">
+                                <ul>
+                                    <li style="margin-bottom: 10px;">Baséze sur l'interaction differente des composantes avec la phase stationnaire et mobile</li>
+                                    <li>Différentes vitesse de migration permettent de les distinguer</li>
+                                </ul>
+                            </div> 
+                            </div>
+
+                        
+                        </div>
+                    </div>
+                    <div class="appSection">
+                        <div class="topSection">
+                            <h3><span>application en biologie</span></h3>
+                            <h3 class="AEL"><span>aventage et limite</span></h3>
+                        </div>
+                        <div class="aboutSection">
+                            <ul>
+                                <li>Analyse de médicaments</li>
+                                <li>controles la qualité des aliments</li>
+                                <li>étude des piguement végétaux</li>
+                                <li>détection des drogues et toxines</li>
+                                <li>Analyse de l'aire et de l'eau</li>
+                                <li>Recherche en biologie et médcine</li>
+                            </ul>
+                            <div class="avetageEtlimites">
+                                <p> <span>aventages :</span>  Précise , Rapide , Polyvalente , Quantitative</p>
+                                <p> <span> limites :</span>  Elle present des couts élevés , complexe , sensible</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </section>
+            
+            <section class="presentation hide" id="presentSection">
+                <div class="container">
+                    <div class="presentSection ">
+                        <div class="topSection">
+                            <h2><span>chromatographie sur papier</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection">
+                                <video controls muted autoplay>
+                                    <source src="video/papier.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p><span>Principe: </span>La phase stationnaire est le papier, et la phase mobile est un solvant qui monte par capillarité.</p>
+                                    <p><span>Utilisation: </span>Expériences simples en laboratoire scolaire.</p>
+                                    <p><span>Example: </span>Séparer les encres de différents stylos.</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/papier.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>
+            <section class="presentation hide" id='CCM'>
+                <div class="container">
+                    <div class="presentSection ">
+                        <div class="topSection">
+                            <h2><span>chromatographie sur couche maince</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection2">
+                                <video controls muted autoplay>
+                                    <source src="video/ccm.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p><span>Principe: </span>une fine couche  de phase stationnaire (comme de gel de sillice )
+                                         est déposée sur  une plaque  en verre ou en plastique
+ . la  phase mobile (un solvant ) se déplace    par capillarite</p>
+                                    <p><span>Utilisation: </span>Identification des composants d'un mélange, comme les pigments végétaux.</p>
+                                    <p><span>Example: </span> Séparer les différents colorants d'un marqueur.</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/ccm.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>
+
+            <section class="presentation hide" id='CPG'>
+                <div class="container">
+                    <div class="presentSection ">
+                        <div class="topSection">
+                            <h2><span>chromatographie en phase gazeuse</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection3">
+                                <video controls muted autoplay>
+                                    <source src="video/Gas.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p><span>Principe: </span>La phase mobile est un gaz (comme l'hélium) et la phase stationnaire est 
+une colonne remplie de matière absorbante.</p>
+                                    <p><span>Utilisation: </span>Analyse des gaz et des substances volatiles.</p>
+                                    <p><span>Example: </span>Détecter des drogues dans le sang, vérifier la pureté de l'air</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/Gas.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>
+            <section class="presentation hide" id="LIQ">
+                <div class="container">
+                    <div class="presentSection ">
+                        <div class="topSection">
+                            <h2><span>chromatographie en phase liquide</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection4">
+                                <video controls muted autoplay>
+                                    <source src="video/liquide/liquide.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p><span>Principe: </span> La phase mobile est un liquide qui est pompé sous haute pression à travers une colonne contenant la phase stationnaire.</p>
+                                    <p><span>Utilisation: </span>Recherche pharmaceutique, contrôle de qualité alimentaire.</p>
+                                    <p><span>types:</span>
+                                    <ul>
+                                        <li><a href="#" onclick="showTypes(this.id)" id="adsorbtion" >chromatographie d'adsorption</a></li>
+                                        <li><a href="#" onclick="showTypes(this.id)" id="partage" >chromatographie de partage</a></li>
+                                        <li><a href="#" onclick="showTypes(this.id)" id="échange" >chromatographie à échange d'ions</a></li>
+                                        <li><a href="#" onclick="showTypes(this.id)" id="exclusion" >chromatographie d'exclusion stérique</a></li>
+                                        <li><a href="#" onclick="showTypes(this.id)" id="affinité" >chromatographie d'affinité</a></li>
+                                        <li><a href="#" onclick="showTypes(this.id)" id="haute" >chromatographie en phase liquide à haute performance (HPLC)</a></li>
+                                    </ul>
+                                    </p>
+                                    <p><span>Example: </span>Analyse de médicaments, détection de pesticides dans l'eau.</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/liquide.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>
+            <section class="presentation hide" id="ADS">
+                <div class="container">
+                    <div class="presentSection ">
+                        <button id="backBtn1" class="backBtn" onclick="back(this.id)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="topSection">
+                            <h2><span>chromatographie d'adsorption</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection5">
+                                <video controls muted autoplay>
+                                    <source src="video/liquide/Adsorption.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p style="margin-bottom: 15px;">La séparation repose sur l'adsorption différentielle des solutés sur une phase stationnaire solide.</p>
+                                    <p>Les composés sont séparés en fonction de leur affinité pour la phase stationnaire.</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/adsobtion.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>
+            <section class="presentation hide" id="PAR">
+                <div class="container">
+                    <div class="presentSection ">
+                        <button id="backBtn2" class="backBtn" onclick="back(this.id)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="topSection">
+                            <h2><span>chromatographie de partage</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection6">
+                                <video controls muted autoplay>
+                                    <source src="video/liquide/partage.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p style="margin-bottom: 15px;">La séparation est basée sur la partition différentielle des solutés entre une phase mobile liquide 
+et une phase stationnaire liquide, cette dernière étant immobilisée sur un support solide.</p>
+                                    <p>Les composés sont séparés en fonction de leur solubilité relative dans les deux phases</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/partage.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>
+            <section class="presentation hide" id="ION">
+                <div class="container">
+                    <div class="presentSection">
+                        <button id="backBtn3" class="backBtn" onclick="back(this.id)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="topSection">
+                            <h2><span>chromatographie à échange d'ions</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection7">
+                                <video controls muted autoplay>
+                                    <source src="video/liquide/ions.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p style="margin-bottom: 15px;">La séparation est basée sur l'échange d'ions entre les solutés et des groupes ioniques fixés sur une résine échangeuse d'ions.</p>
+                                    <p>Les composés sont séparés en fonction de leur charge électrique</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/ion.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>
+            <section class="presentation hide" id="EXC">
+                <div class="container">
+                    <div class="presentSection ">
+                        <button id="backBtn4" class="backBtn" onclick="back(this.id)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="topSection">
+                            <h2><span>chromatographie d'exclusion stérique</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection8">
+                                <video controls muted autoplay>
+                                    <source src="video/liquide/exclusion.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p style="margin-bottom: 15px;">La séparation est basée sur la taille des molécules.</p>
+                                    <p>La phase stationnaire est un matériau poreux qui sépare les molécules en fonction de leur capacité à pénétrer dans les pores. Les molécules plus grosses sont exclues des pores et éluées en premier, tandis que les molécules plus petites pénètrent dans les pores et sont éluées plus tard.</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/exclusion.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>
+            <section class="presentation hide" id="AFF">
+                <div class="container">
+                    <div class="presentSection ">
+                        <button id="backBtn5" class="backBtn" onclick="back(this.id)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="topSection">
+                            <h2><span>chromatographie d'affinité</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection9">
+                                <video controls muted autoplay>
+                                    <source src="video/liquide/affinité.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p style="margin-bottom: 15px;">La séparation est basée sur l'interaction spécifique entre un soluté et une molécule (ligand) immobilisée sur la phase stationnaire.</p>
+                                    <p>Cette technique est très sélective et est utilisée pour purifier des biomolécules spécifiques.</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/affinite.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>           
+            <section class="presentation hide" id="HPLC">
+                <div class="container">
+                    <div class="presentSection ">
+                        <button id="backBtn6" class="backBtn" onclick="back(this.id)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="topSection">
+                            <h2><span>chromatographie en phase liquide à haute performance (HPLC)</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="videoSection" id="videoSection10">
+                                <video controls muted autoplay>
+                                    <source src="video/liquide/HPLC.mp4">
+                                </video>
+                            </div>
+                            <div class="supportSection">
+                                <div class="textSection">
+                                    <p style="margin-bottom: 15px;">C'est une technique de chromatographie en phase liquide qui utilise des pressions élevées pour forcer la phase mobile à travers une colonne remplie de particules de phase stationnaire très fines.
+</p>
+                                    <p>L'HPLC permet des séparations très efficaces et est largement utilisée en analyse chimique.</p>
+                                </div>
+                                <div class="imgSection">
+                                    <img src="img/hplc.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                  
+                </div>
+            </section>   
+            <section class="hitory hide" id="historySection">
+                <div class="container">
+                    <div class="inventorCard">
+                        <div class="topSection">
+                            <h2><span>mekhail tswett</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="textSection">
+                                <ul>
+                                    <li>nom complet : Mikhaïl Semionovitch Tswett</li>
+                                    <li>date de naissance : 14 mai 1872</li>
+                                    <li>nationalité : Russe</li>
+                                    <li>date de décéd : 14 juin 1919</li>
+                                   
+                               
+                                </ul>
+                            </div>
+                            <div class="imgSection">
+                                <img src="img/Mikhail_Tsvet.jpg" >
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="historyView">
+                        <div class="topSection">
+                            <h2 style="text-align: center;"><span>etapes de devloppement de chromatographie</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="step1">
+                            <div class="topSection">
+<h2>1️⃣ Invention (1903)</h2>
+                            </div>
+                            <div class="textSection">
+<p>Mikhaïl Tswett invente la chromatographie</p>
+                            <p>Séparation des pigments végétaux en bandes colorées</p>
+                            </div>
+          
+                            
+                            </div>
+                  
+                            <div class="step2">
+                            <div class="topSection">
+                            <h2>2️⃣ Période d’oubli</h2>
+                            </div>
+                            <div class="textSection">
+                            <p>Technique peu utilisée pendant plusieurs années</p>
+                                                        <p>Peu reconnue au début</p>
+                            </div>
+                                      
+                            
+                            </div>
+                      <div class="step3">
+                        <div class="topSection">
+                        <h2>3️⃣ Développement (années 1940)</h2>
+                        </div>
+                        <div class="textSection">
+                        <p>Archer John Porter Martin et Richard Laurence Millington Synge améliorent la méthode</p>
+                                                        <p>Création de la chromatographie de partage</p>
+                        </div>
+                          
+                                 
+                      </div>
+                      <div class="step4">
+                        <div class="topSection">
+                        <h2>4️⃣ Reconnaissance (1952)</h2>
+                        </div>
+                        <div class="textSection">
+                        <p>Martin et Synge reçoivent le prix Nobel de chimie</p>
+                        </div>
+                       
+                                  
+                      </div>
+                              
+                      <div class="step5">
+                        <div class="topSection">
+                         <h2>5️⃣ Évolution moderne</h2>
+                        </div>
+                        <div class="textSection">
+                               <p>Apparition de nouvelles techniques :</p>
+                               <p>CCM</p>
+                               <p>CPG</p>
+                               <p>HPLC</p>
+                        </div>
+
+
+                      </div>
+                                 <div class="step6">   
+                                    <div class="topSection">
+                                  <h2>  6️⃣ Utilisation actuelle</h2>
+                                    </div>
+                                    <div class="textSection">
+                               <p>Utilisée en :</p>
+
+                               <p>médecine</p>
+                               <p>chimie</p>
+                               <p>pharmacie</p>
+                               <p>environnement</p>
+                                    </div>
+
+
+
+                                 </div>
+                                 
+                              
+
+                             
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="enPlus hide" id="more">
+                <div class="container">
+                    <div class="conclusion">
+                        <div class="topSection">
+                            <h2><span>conclusion</span></h2>
+                        </div>
+                        <div class="aboutSection">
+                            <div class="textSection">
+                                <p>La chromatographie est une technique essentielle en science pour séparer,analyser et identifier les composants d'un mélange
+                                    .Grace à ses differenetes méthodes elle s'adapte à de nombreux domaines comme la chimie , la biologie et les industrie.
+                                Bien qu'elle soit précise et polyvalente , elle presente aussi des limites , notamment en termes de cout et de complexité.
+                                Son importance rest néanmoin incontestables dans les analyse scientifique et industrielle</p>
+                                     <p style="margin:10px  ;color:red">Le fichier PDF est disponible ici</p>
+                                     <button><a href="Chromatographie.pdf" download>telecharger</a></button>
+
+                            </div>
+                            <div class="imgSection">
+                                <img src="img/chromat.jpg" >
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
